@@ -3,6 +3,6 @@
   become: yes
   tasks:
     - name: Ensure Apache is installed
-      apt:
-        name: apache2
+      dnf:
+        name: httpd
         state: present
